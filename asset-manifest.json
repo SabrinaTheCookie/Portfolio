@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e72892cd.css",
-    "main.js": "/Portfolio/static/js/main.bd68053d.js",
+    "main.js": "/Portfolio/static/js/main.8b08a60b.js",
     "static/css/64.bba8fa55.chunk.css": "/Portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.41912c0a.chunk.js": "/Portfolio/static/js/64.41912c0a.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.6b18baac.chunk.js": "/Portfolio/static/js/769.6b18baac.chunk.js",
-    "static/media/stanfordLogo.png": "/Portfolio/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
     "static/media/canterburyLogo.png": "/Portfolio/static/media/canterburyLogo.4287319d676caa678aa4.png",
     "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -26,7 +25,7 @@
     "index.html": "/Portfolio/index.html",
     "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.e72892cd.css.map": "/Portfolio/static/css/main.e72892cd.css.map",
-    "main.bd68053d.js.map": "/Portfolio/static/js/main.bd68053d.js.map",
+    "main.8b08a60b.js.map": "/Portfolio/static/js/main.8b08a60b.js.map",
     "64.bba8fa55.chunk.css.map": "/Portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.41912c0a.chunk.js.map": "/Portfolio/static/js/64.41912c0a.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -34,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.e72892cd.css",
-    "static/js/main.bd68053d.js"
+    "static/js/main.8b08a60b.js"
   ]
 }
