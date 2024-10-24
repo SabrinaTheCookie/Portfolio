@@ -117,15 +117,15 @@ export default function socialMedia() {
       ) : null}
 
       {socialMediaLinks.itch ? (
-          <a
-              href={socialMediaLinks.itch}
-              className="icon-button itch"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-              <i className="fab fa-itch"></i>
-              <span></span>
-          </a>
+        <a
+          href={socialMediaLinks.itch}
+          className="icon-button itch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-itch"></i>
+          <span></span>
+        </a>
       ) : null}
 
       {socialMediaLinks.kaggle ? (
