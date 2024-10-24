@@ -123,7 +123,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-itch"></i>
+          <i class="fab fa-brands fa-itch-io"></i>
           <span></span>
         </a>
       ) : null}

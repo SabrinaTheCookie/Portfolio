@@ -46,14 +46,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CREATE UNIQUE SOLUTIONS FOR UNIQUE PROBLEMS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Use the latest technologies to push the boundaries on what games can do"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Rapid prototyping to test ideas fast"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integrate Multiplayer, Motion Capture, or Virtual Reality into games"
     )
   ],
 
@@ -62,56 +62,48 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "unity",
+      fontAwesomeClassname: "fab fa-brands fa-unity"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "unreal",
+      fontAwesomeClassname: "fa fa-solid fa-rocket"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "vr",
+      fontAwesomeClassname: "fas fa-solid fa-vr-cardboard"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "ar",
+      fontAwesomeClassname: "fas fa-solid fa-mobile"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "prototype",
+      fontAwesomeClassname: "fas fa-solid fa-vials"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "multiplayer",
+      fontAwesomeClassname: "fas fa-solid fa-people-arrows"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "github",
+      fontAwesomeClassname: "fab fa-brands fa-github"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "jira",
+      fontAwesomeClassname: "fab fa-brands fa-trello"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "steam",
+      fontAwesomeClassname: "fab fa-brands fa-steam"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "slack",
+      fontAwesomeClassname: "fab fa-brands fa-slack"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "android",
+      fontAwesomeClassname: "fab fa-brands fa-android"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -123,23 +115,19 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Canterbury",
+      logo: require("./assets/images/canterburyLogo.png"),
+      subHeader: "Bachelor's of Product Design: Applied Immersive Game Design",
+      duration: "February 2021 - November 2023",
+      desc: "Ranked top 10% in the program. Courses included pratical projects in Programming and Design.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Worked with Runaway Play, a Dunedin-based studio to create Tangled Visions, an alternative take on jigsaw puzzles",
+        "Created 10+ experiences across PC, Mobile, VR, AR, and physical media",
+        "Deep dives into Unity, Unreal, and how game engines work",
+        "Leading collaborative agile development with up to 8 people",
+        "Diverse exploration of game culture, methodologies, and frameworks",
+        "Immersed into co-curriculars that develop soft skills"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -147,7 +135,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -171,29 +159,42 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Programmer",
+      company: "CerebralFix",
+      companylogo: require("./assets/images/cerebralfixLogo.png"),
+      date: "December 2023 – Present",
+      desc: "Programmer working in various game engines in work-for-hire projects for clients such as Skyline Enterprises, BBC, Disney, Universal Studios, and Niantic.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Shipped Skyline Luge Simulator, a multiplayer 6DOF experience that sees players race down virtual luge tracks. Built in Unreal Engine 5.",
+        "Product exploration and prototyping for the Apple Vision Pro in Unity",
+        "Augmented Reality short-form entertainment in Niantic Studio, a webXR platform",
+        "Working on the ground for projects of mid-sized teams and solo development",
+        "Fostering culture through social event organization and marginalized group advocation."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "R&D Intern",
+      company: "CerebralFix",
+      companylogo: require("./assets/images/cerebralfixLogo.png"),
+      date: "November 2022 – January 2023",
+      desc: "Researching real-time motion capture using depth-cameras to create peripheral-free full-body gameplay, built in Unreal Engine 5.",
+      descBullets: [
+        "Created a short-form experience to prototype real-time full-body motion capture.",
+        "Designed with accessibility in mind to ensure the experience was inclusive of all.",
+        "Exposed to agile in a professional environment by participating in regular development rituals."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Peer Assisted Learning Leader",
+      company: "University of Canterbury",
+      companylogo: require("./assets/images/canterburyLogo.png"),
+      date: "July 2023 – November 2023",
+      desc: "Facilitating first-year student wellbeing and engagement through providing supplementary sessions to help students succeed.",
+      descBullets: [
+        "Selected via a non-application process by standing out as an exemplary student who has succeeded.",
+        "Running additional support sessions in a group environment and one-on-one.",
+        "Coordinating with university staff to ensure the student experience is streamlined and concerns brought to the appropriate parties."
+      ]
     }
   ]
 };
@@ -202,7 +203,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -210,28 +211,21 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "SOME GAMES AND EXPERIENCES THAT HAVE MADE IT INTO THE WORLD",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/skyline-enterprises.png"),
+      projectName: "Skyline Virtual Luge",
+      projectDesc:
+        "Based on the real luge experience in Queenstown New Zealand, this arcade experience features a custom motion platform, photorealistic 3D environments built in the unreal enginer, and competitive multiplayer racing.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+          name: "View Trailer",
+          url: "https://www.youtube.com/watch?v=r7UUMSHweUI&ab_channel=CerebralFix"
+        },
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://queenstown.skyline.co.nz/things-to-do/other-activities/skyline-luge-racing/"
         }
       ]
     }
@@ -249,76 +243,30 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Game Developers Society Founder",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "I was one of the founding members of Game Developers Society, that during my time grew to 140 members, drew sponsorship from Dinosaur Poloclub and Redbull, and won an award for Best Arts Event Programme.",
+      image: require("./assets/images/gdsLogo.png"),
+      imageAlt: "Game Developers Society Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+           name: "Award Night Photo",
+           url: "https://drive.google.com/file/d/1nty9yjki8Cejfdtxm0r73hw3IjQfdx0P/view?usp=sharing"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Best Design Process Award",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Won 'Best Design Process' for my capstone project, Tangled Visions, given by University of Canterbury's School of Product Design'.",
+      image: require("./assets/images/productDesignLogo.png"),
+      imageAlt: "University of Canterbury School of Product Design Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Tangled Visions Poster",
+          url: "https://drive.google.com/file/d/14K0QGRQ_NB5dGjdqLrOowpYaa2KvfIln/view?usp=sharing"
         }
       ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -329,19 +277,45 @@ const blogSection = {
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 🏅"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "404 Talk Not Found",
+      subtitle: "This will come soon I promise!\nGot an opportunity? Lets talk!",
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+// Resume Section
+const resumeSection = {
+  title: "Resume",
+  subtitle: "Feel free to download my resume",
+  display: true // Set false to hide this section, defaults to true
+};
+
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  subtitle:
+    "Discuss a project, share an opportunity, or just want to say hi? My Inbox is open for all.",
+  number: "+64-211802667",
+  email_address: "sabrinaLCooke@gmail.com"
+};
+
+//#region Unused
+// Blogs Section
+
+const blogSection = {
+  title: "Blogs",
+  subtitle:
+    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  blogs: [],
+  display: false // Set false to hide this section, defaults to true
+};
+
 
 // Podcast Section
 
@@ -353,32 +327,17 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
+
+//#endregion
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
