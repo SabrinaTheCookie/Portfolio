@@ -23,7 +23,7 @@ const greeting = {
   username: "Sabrina Cooke",
   title: "Kia Ora, I'm Sabrina",
   subTitle: emoji(
-    "A Game Developer from New Zealand 🎮 with experience building immersive experiences for PC, mobile, and web using Unreal, Unity, and other engines."
+    "A Game Programmer from New Zealand 🎮 with experience building immersive experiences for PC, mobile, and web using Unreal, Unity, and other engines."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1qTOt0GTjerJMFt8HkQEf2k5IM-3-Y0UF/view?usp=sharing", // Set to empty to hide the button
@@ -53,7 +53,7 @@ const skillsSection = {
     ),
     emoji("⚡ Rapid prototyping to test ideas fast"),
     emoji(
-      "⚡ Integrate Multiplayer, Motion Capture, or Virtual Reality into games"
+      "⚡ Integrate Multiplayer, Motion Capture, XR, or other frameworks into games"
     )
   ],
 
@@ -61,14 +61,6 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "unity",
-      fontAwesomeClassname: "fab fa-brands fa-unity"
-    },
-    {
-      skillName: "unreal",
-      fontAwesomeClassname: "fa fa-solid fa-rocket"
-    },
     {
       skillName: "vr",
       fontAwesomeClassname: "fas fa-solid fa-vr-cardboard"
@@ -78,32 +70,28 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-solid fa-mobile"
     },
     {
-      skillName: "prototype",
-      fontAwesomeClassname: "fas fa-solid fa-vials"
+        skillName: "PC",
+        fontAwesomeClassname: "fa fa-solid fa-desktop"
     },
     {
-      skillName: "multiplayer",
-      fontAwesomeClassname: "fas fa-solid fa-people-arrows"
+        skillName: "android",
+        fontAwesomeClassname: "fab fa-brands fa-android"
+    },
+    {
+        skillName: "multiplayer",
+        fontAwesomeClassname: "fas fa-solid fa-people-arrows"
+    },
+    {
+      skillName: "unity",
+      fontAwesomeClassname: "fab fa-brands fa-unity"
+    },
+    {
+      skillName: "unreal",
+      fontAwesomeClassname: "fa fa-solid fa-rocket"
     },
     {
       skillName: "github",
       fontAwesomeClassname: "fab fa-brands fa-github"
-    },
-    {
-      skillName: "jira",
-      fontAwesomeClassname: "fab fa-brands fa-trello"
-    },
-    {
-      skillName: "steam",
-      fontAwesomeClassname: "fab fa-brands fa-steam"
-    },
-    {
-      skillName: "slack",
-      fontAwesomeClassname: "fab fa-brands fa-slack"
-    },
-    {
-      skillName: "android",
-      fontAwesomeClassname: "fab fa-brands fa-android"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -210,7 +198,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Shipped Projects",
   subtitle: "SOME GAMES AND EXPERIENCES THAT HAVE MADE IT INTO THE WORLD",
   projects: [
     {
@@ -339,7 +327,7 @@ const twitterDetails = {
 
 //#endregion
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

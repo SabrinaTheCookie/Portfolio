@@ -46,7 +46,7 @@ export default function Greeting() {
                     download="resume_sabrinacooke.pdf"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="My resume" />
                   </a>
                 )}
               </div>
@@ -54,7 +54,14 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
+              <>
               <DisplayLottie animationData={landingPerson} />
+              <img
+                 src={require("../../assets/images/BreeHeadshot.png")}
+                 alt="overlay"
+                 className="overlay-image"
+               />
+             </>
             ) : (
               <img
                 alt="man sitting on table"
