@@ -28,9 +28,9 @@
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: $textColor;
-  text-shadow: 2px 1px 2px $contactDetailHoverTS;
-  transition: all 0.3s;
+    color: $textColorDark;
+    text-shadow: 1px 1px 1px $contactDetailHoverTS;
+    transition: all 0.3s;
 }
 
 .contact-subtitle {
