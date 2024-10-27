@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f1b129cc.css",
+    "main.css": "/Portfolio/static/css/main.e82d1fa7.css",
     "main.js": "/Portfolio/static/js/main.be108e69.js",
     "static/css/64.0097dd3e.chunk.css": "/Portfolio/static/css/64.0097dd3e.chunk.css",
     "static/js/64.41912c0a.chunk.js": "/Portfolio/static/js/64.41912c0a.chunk.js",
@@ -20,8 +20,8 @@
     "static/media/cerebralfixLogo.png": "/Portfolio/static/media/cerebralfixLogo.95aff47b67692915c057.png",
     "static/media/skill.svg": "/Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/Portfolio/index.html",
-    "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.f1b129cc.css.map": "/Portfolio/static/css/main.f1b129cc.css.map",
+    "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.c4eca39288fdf8c7aba9.svg",
+    "main.e82d1fa7.css.map": "/Portfolio/static/css/main.e82d1fa7.css.map",
     "main.be108e69.js.map": "/Portfolio/static/js/main.be108e69.js.map",
     "64.0097dd3e.chunk.css.map": "/Portfolio/static/css/64.0097dd3e.chunk.css.map",
     "64.41912c0a.chunk.js.map": "/Portfolio/static/js/64.41912c0a.chunk.js.map",
@@ -29,7 +29,7 @@
     "769.6b18baac.chunk.js.map": "/Portfolio/static/js/769.6b18baac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1b129cc.css",
+    "static/css/main.e82d1fa7.css",
     "static/js/main.be108e69.js"
   ]
 }
