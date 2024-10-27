@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e82d1fa7.css",
-    "main.js": "/Portfolio/static/js/main.be108e69.js",
-    "static/css/64.0097dd3e.chunk.css": "/Portfolio/static/css/64.0097dd3e.chunk.css",
+    "main.css": "/Portfolio/static/css/main.940a3087.css",
+    "main.js": "/Portfolio/static/js/main.2a396fd5.js",
+    "static/css/64.ec4a5b9c.chunk.css": "/Portfolio/static/css/64.ec4a5b9c.chunk.css",
     "static/js/64.41912c0a.chunk.js": "/Portfolio/static/js/64.41912c0a.chunk.js",
-    "static/css/769.b3cbb36b.chunk.css": "/Portfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/css/769.87f61078.chunk.css": "/Portfolio/static/css/769.87f61078.chunk.css",
     "static/js/769.6b18baac.chunk.js": "/Portfolio/static/js/769.6b18baac.chunk.js",
-    "static/media/BreeHeadshot.png": "/Portfolio/static/media/BreeHeadshot.e315fd8c1176dcdd415c.png",
+    "static/media/BreeHeadshot.png": "/Portfolio/static/media/BreeHeadshot.6f7d208d0156c613da94.png",
     "static/media/canterburyLogo.png": "/Portfolio/static/media/canterburyLogo.4287319d676caa678aa4.png",
     "static/media/skyline-enterprises.png": "/Portfolio/static/media/skyline-enterprises.2b77e0e6b9406b24de2f.png",
     "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -21,15 +21,15 @@
     "static/media/skill.svg": "/Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/talksCardBack.svg": "/Portfolio/static/media/talksCardBack.c4eca39288fdf8c7aba9.svg",
-    "main.e82d1fa7.css.map": "/Portfolio/static/css/main.e82d1fa7.css.map",
-    "main.be108e69.js.map": "/Portfolio/static/js/main.be108e69.js.map",
-    "64.0097dd3e.chunk.css.map": "/Portfolio/static/css/64.0097dd3e.chunk.css.map",
+    "main.940a3087.css.map": "/Portfolio/static/css/main.940a3087.css.map",
+    "main.2a396fd5.js.map": "/Portfolio/static/js/main.2a396fd5.js.map",
+    "64.ec4a5b9c.chunk.css.map": "/Portfolio/static/css/64.ec4a5b9c.chunk.css.map",
     "64.41912c0a.chunk.js.map": "/Portfolio/static/js/64.41912c0a.chunk.js.map",
-    "769.b3cbb36b.chunk.css.map": "/Portfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.87f61078.chunk.css.map": "/Portfolio/static/css/769.87f61078.chunk.css.map",
     "769.6b18baac.chunk.js.map": "/Portfolio/static/js/769.6b18baac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e82d1fa7.css",
-    "static/js/main.be108e69.js"
+    "static/css/main.940a3087.css",
+    "static/js/main.2a396fd5.js"
   ]
 }
