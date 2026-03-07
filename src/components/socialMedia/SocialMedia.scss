@@ -9,7 +9,7 @@
 }
 
 .icon-button i {
-  color: $textColorDark;
+  color: $textColor;
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;
@@ -84,11 +84,12 @@
 .kaggle i:hover,
 .itch i:hover,
 .medium i:hover {
-  background-color: $textColor;
+  background-color: $buttonHoverDark;
+  box-shadow: 0px 0px 50px $buttonHover;
 }
 
 /* Media Query */
-@media (max-width: 768px) {
+@media (max-width: 1210px) {
   .social-media-div {
     text-align: center;
   }

@@ -2,14 +2,34 @@
 
 .footer-text {
   text-align: center;
-  color: $subTitle !important;
+  font-weight: 700;
+  color: $textColor !important;
 }
 
-.dark-mode {
-  color: $textColorDark !important;
+.extra-text {
+  margin-top: 200px;
+  font-size: 12px;
+  text-align: center;
+  color: $textColor !important;
+}
+
+.extra-text a:link {
+  color: $textColor;
+}
+
+.extra-text a:visited {
+  color: $textColor;
+}
+
+.extra-text a:hover {
+  color: $buttonHover; // optional hover colour
+}
+
+.extra-text a:active {
+  color: $textColor;
 }
 
 .footer-div {
-  margin-top: 2rem;
+  margin-top: 200px;
   padding-bottom: 1rem;
 }

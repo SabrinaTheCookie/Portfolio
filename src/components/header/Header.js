@@ -1,93 +1,58 @@
-import React, {useContext} from "react";
-import Headroom from "react-headroom";
 import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
-import StyleContext from "../../contexts/StyleContext";
 import {
-  greeting,
-  workExperiences,
-  skillsSection,
-  openSource,
-  blogSection,
-  talkSection,
-  achievementSection,
-  resumeSection
+    greeting,
+    talkSection,
+    achievementSection,
+    projectsSection,
 } from "../../portfolio";
+import { useEffect, useState } from "react";
 
-function Header() {
-  const {isDark} = useContext(StyleContext);
-  const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
-  const viewSkills = skillsSection.display;
-  const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
-  const viewResume = resumeSection.display;
+const Header = () => {
+    const menuItems = [
+        projectsSection.display && { id: "projects", label: "Projects" },
+        achievementSection.display && { id: "achievements", label: "Achievements" },
+        talkSection.display && { id: "talks", label: "Talks" },
+        { id: "contact", label: "Contact Me" },
+    ].filter(Boolean); // remove false/null items
 
-  return (
-    <Headroom>
-      <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
-        </a>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label
-          className="menu-icon"
-          htmlFor="menu-btn"
-          style={{color: "white"}}
-        >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
-        </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-          )}
-          {viewExperience && (
-            <li>
-              <a href="#experience">Work Experiences</a>
-            </li>
-          )}
-          {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
-            </li>
-          )}
-          {viewAchievement && (
-            <li>
-              <a href="#achievements">Achievements</a>
-            </li>
-          )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
-            </li>
-          )}
-          {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-          )}
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    // Update scroll offset based on menu state and number of items
+    useEffect(() => {
+        const defaultOffset = 100;
+        const perItemHeight = 45; // pixels per item
+        const offset = menuOpen ? 100 + menuItems.length * perItemHeight : defaultOffset + perItemHeight;
+        document.documentElement.style.setProperty("--scroll-offset", `${offset}px`);
+    }, [menuOpen, menuItems.length]);
+ 
+    return (
+        <header className="header">
+            <a href="/" className="logo">
+                <span className="logo-accents"> &lt;</span>
+                <span className="logo-name">{greeting.username}</span>
+                <span className="logo-accents">/&gt;</span>
             </a>
-          </li>
-        </ul>
-      </header>
-    </Headroom>
-  );
-}
+
+            <input
+                className="menu-btn"
+                type="checkbox"
+                id="menu-btn"
+                checked={menuOpen}
+                onChange={(e) => setMenuOpen(e.target.checked)}
+            />
+            <label className="menu-icon" htmlFor="menu-btn" style={{ color: "white" }}>
+                <span className="navicon"></span>
+            </label>
+
+            <ul className="menu">
+                {menuItems.map((item) => (
+                    <li key={item.id}>
+                        <a href={`#${item.id}`}>{item.label}</a>
+                    </li>
+                ))}
+            </ul>
+        </header>
+    );
+};
+
 export default Header;

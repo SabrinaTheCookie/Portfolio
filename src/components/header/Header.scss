@@ -1,30 +1,25 @@
 @import "../../_globalColor";
-
-/*React-headroom*/
-.headroom-wrapper {
-  max-height: 100px;
-}
-
 /* header */
 
-.dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
+:root {
+  --scroll-offset: 100px; // default offset
 }
 
-.dark-menu li a {
-  color: $textColorDark !important;
-}
-
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
+#projects,
+#achievements,
+#talks,
+#contact {
+  scroll-margin-top: var(--scroll-offset);
 }
 
 .header {
-  background-color: $lightBackground1;
-  max-width: 100%;
+  background-color: $cardBackground;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 15px 20px;
-  margin: 0px auto;
 }
 
 .header ul {
@@ -34,20 +29,20 @@
   overflow: hidden;
 }
 
-.grey-color {
-  color: $subTitle;
+.logo-accents {
+  color: $cardTextColor;
 }
 
 .header li a {
   display: block;
   padding: 15px 20px;
-  color: $textColor;
+  color: $cardTextColor;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  background-color: $buttonHoverDark;
 }
 
 .header .logo {
@@ -65,6 +60,7 @@
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
+  color: $cardTextColor;
   padding: 0 10px;
 }
 
@@ -73,6 +69,7 @@
 .header .menu {
   clear: both;
   max-height: 0;
+  padding-right: 50px;
   transition: max-height 0.2s ease-out;
 }
 
@@ -83,6 +80,7 @@
   display: inline-block;
   float: right;
   padding: 28px 20px;
+  padding-right: 50px;
   position: relative;
   user-select: none;
 }
@@ -97,7 +95,7 @@
 }
 
 .header .menu-icon .navicon-dark {
-  background: $textColorDark;
+  background: $textColor;
 }
 
 .header .menu-icon .navicon:before,
@@ -113,7 +111,7 @@
 
 .header .menu-icon .navicon-dark:before,
 .header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
+  background: $textColor !important;
   content: "";
   display: block;
   height: 100%;
@@ -175,8 +173,8 @@
     display: none;
   }
 }
-@media (max-width: 960px) and (min-width: 768px) {
+@media (max-width: 880px) and (min-width: 768px) {
   .header {
-    font-size: 12px;
+    font-size: 16px;
   }
 }

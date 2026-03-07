@@ -18,13 +18,27 @@
   align-items: center;
   justify-content: center;
   font-size: calc(0.625rem + 2vmin);
-  color: $textColorDark;
+  color: $textColor;
 }
 
 .App-link {
   color: $appLink;
 }
 
+.Title {
+  color: $textColor;
+}
+
+.Title-Center {
+  color: $textColor;
+  text-align: center;
+}
+
 .subTitle {
-  color: $subTitle;
+  color: $textColor;
+}
+
+.subTitle-Center {
+  color: $textColor;
+  text-align: center;
 }

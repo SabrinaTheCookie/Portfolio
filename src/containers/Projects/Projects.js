@@ -1,10 +1,9 @@
-import React, {useContext} from "react";
-import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
+import "./Projects.scss";
+import {projectsSection} from "../../portfolio";
+import {Fade} from "react-awesome-reveal";
 
-export default function StartupProject() {
+
+export default function Projects() {
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -12,35 +11,28 @@ export default function StartupProject() {
     var win = window.open(url, "_blank");
     win.focus();
   }
-
-  const {isDark} = useContext(StyleContext);
-  if (!bigProjects.display) {
+  
+  if (!projectsSection.display) {
     return null;
   }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="Title">{projectsSection.title}</h1>
           <p
-            className={
-              isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
+            className={"subTitle"
             }
           >
-            {bigProjects.subtitle}
+            {projectsSection.subtitle}
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
+            {projectsSection.projects.map((project, i) => {
               return (
                 <div
                   key={i}
-                  className={
-                    isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
+                  className={"project-card"
                   }
                 >
                   {project.image ? (
@@ -54,13 +46,12 @@ export default function StartupProject() {
                   ) : null}
                   <div className="project-detail">
                     <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
+                      className={"card-title"}
                     >
                       {project.projectName}
                     </h5>
                     <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      className={"card-subtitle"
                       }
                     >
                       {project.projectDesc}
@@ -71,8 +62,7 @@ export default function StartupProject() {
                           return (
                             <span
                               key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
+                              className={"project-tag"
                               }
                               onClick={() => openUrlInNewTab(link.url)}
                             >

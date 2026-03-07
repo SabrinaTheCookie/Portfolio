@@ -7,35 +7,31 @@
 
 /* Rectangle Card Layout */
 .rectangle {
-  background: url(../../assets/images/talksCardBack.svg);
+  background-color: $cardBackground;
   width: 380px;
-  height: 300px;
-  border-radius: 4px;
+  height: max-content;
+  min-height: 300px;
+  border-radius: 10px;
   box-shadow: 0px 20px 50px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 50px;
+  margin-bottom: 10px;
+  
+  display: flex;
+  flex-direction: column;
 }
 .rectangle:hover {
-  box-shadow: 0 20px 40px $textColorDark;
-}
-.dark-rectangle {
-  box-shadow: 0px 0px 20px 0px;
-}
-.mask {
-  clip: rect(0px, 460px, 220px, 0px);
-  border-radius: 4px;
-  position: absolute;
+  box-shadow: 0 20px 40px $buttonHover;
 }
 
 /* Card  Styling */
 .talk-card-title {
-  color: $textColorDark;
-  margin: auto;
+  color: $cardTextColor;
   text-align: left;
-  margin-top: 25px;
-  padding: 0px 0px 40px 30px;
+  padding-left: 30px;
+  margin-top: 30px;
   font-size: 30px;
   line-height: normal;
   overflow: hidden;
@@ -44,37 +40,40 @@
   -webkit-box-orient: vertical;
 }
 .talk-card-subtitle {
-  margin-top: 50px;
+  color: $cardTextColor;
   text-align: justify;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 16px;
-  color: $talkCardSubTitle;
-  line-height: 18px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 .talk-button {
-  background-color: $buttonColor;
-  color: $textColorDark;
+  background: $cardButton;
+  border: solid 3px $cardButton;
+  color: $cardButtonText;
   width: 90px;
   padding: 10px 18px;
-  border-radius: 3px;
+  border-radius: 6px;
   text-align: center;
   text-decoration: none;
   display: block;
-  margin-top: 20px;
+  margin-top: auto;
   font-size: 14px;
   cursor: pointer;
+  
 }
 .talk-button:hover {
-  background: $buttonHover;
+  background: $cardButtonText;
+  color: $cardButton;
 }
 .card-footer-button-div {
   display: flex;
   justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 /* Media Query */
@@ -84,10 +83,6 @@
   }
 }
 @media (max-width: 768px) {
-  .mask {
-    clip-path: none;
-    position: relative;
-  }
   .talk-card-title {
     margin-top: 30px;
   }
@@ -96,22 +91,26 @@
   }
 
   .talk-button {
-    background-color: $buttonColor;
-    color: $textColorDark;
+    background: $cardButton;
+    border: solid 3px $cardButton;
+    color: $cardButtonText;
     width: 90px;
     padding: 10px 18px;
-    border-radius: 3px;
+    border-radius: 6px;
     text-align: center;
     text-decoration: none;
     display: block;
-    margin-top: 20px;
+    margin-top: auto;
     font-size: 14px;
     cursor: pointer;
     transition: 0.2s ease-in;
   }
+  
   .talk-button:hover {
-    background: $buttonHover;
+    background: $cardButtonText;
+    color: $cardButton;
   }
+  
   .card-footer-button-div {
     display: flex;
     justify-content: space-around;

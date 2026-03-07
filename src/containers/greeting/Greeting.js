@@ -1,16 +1,12 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import {Fade} from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import "../Main.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import {greeting} from "../../portfolio";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -20,18 +16,13 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
+              <h1 className={"greeting-text"}>
                 {" "}
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
+                className={"greeting-text-p subTitle"
                 }
               >
                 {greeting.subTitle}
@@ -53,21 +44,7 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <>
-              <DisplayLottie animationData={landingPerson} />
-              <img
-                 src={require("../../assets/images/BreeHeadshot.png")}
-                 alt="overlay"
-                 className="overlay-image"
-               />
-             </>
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
+              <img src={require("../../assets/images/bree_Headshot_Grayscale.png")} alt="portrait"/>
           </div>
         </div>
       </div>
