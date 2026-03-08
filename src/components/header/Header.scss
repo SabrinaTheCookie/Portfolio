@@ -43,6 +43,7 @@
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: $buttonHoverDark;
+  border-radius: 6px;
 }
 
 .header .logo {

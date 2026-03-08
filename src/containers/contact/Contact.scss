@@ -18,8 +18,8 @@
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-    color: $textColor;
-    text-shadow: 0px 0px 20px $buttonHover;
+    color: $primary;
+    text-shadow: 0px 0px 20px  $buttonColor;
     transition: all 0.3s;
 }
 

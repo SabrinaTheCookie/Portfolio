@@ -1,7 +1,7 @@
 @import "../../_globalColor";
 
 .container {
-  display: flex;
+  display: contents;
   justify-content: center;
 }
 
@@ -9,7 +9,7 @@
 .rectangle {
   background-color: $cardBackground;
   width: 380px;
-  height: max-content;
+  height: 370px;
   min-height: 300px;
   border-radius: 10px;
   box-shadow: 0px 20px 50px $darkBoxShadow;
@@ -49,6 +49,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
+  white-space: pre-line;
 }
 .talk-button {
   background: $cardButton;
@@ -75,6 +76,8 @@
   margin-top: auto;
   margin-bottom: 20px;
 }
+
+
 
 /* Media Query */
 @media (max-width: 1380px) {
@@ -121,4 +124,6 @@
     height: auto;
     padding-bottom: 30px;
   }
+  
+  
 }

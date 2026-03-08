@@ -1,17 +1,24 @@
 @import "../../_globalColor";
 
-
 .card-image {
   max-width: 100%;
   height: auto;
   width: 250px;
 }
+
 .card-title {
   color: $cardTextColor;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
-  margin: 15px 0 0 0;
+  margin: 15px 0 5px 0;
+}
+
+.card-subtitle {
+  color: $cardTextColor;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0.5rem 0 1rem 0;
 }
 
 .project-card {
@@ -23,7 +30,7 @@
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
+  justify-content: flex-start; /* change from center to flex-start */
 }
 
 .project-card:hover {
@@ -32,6 +39,10 @@
 
 .project-detail {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
 }
 
 .project-image {
@@ -41,12 +52,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem; /* add spacing below image */
 }
 
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
+}
+
+.project-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
 }
 
 .project-card-footer span.project-tag {
@@ -62,20 +82,23 @@
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 
-.project-card-footer span.project-tag:hover{
+.project-card-footer span.project-tag:hover {
   background: $cardButtonText;
   color: $cardButton;
 }
 
 @media (max-width: 768px) {
-  .project-subtitle {
-    font-size: 16px;
+  .card-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+  .card-title {
+    font-size: 18px;
     text-align: center;
   }
 }

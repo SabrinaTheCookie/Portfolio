@@ -2,22 +2,27 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
+$primary: #f4c359;
+$primaryDark: #af8c40;
+$black: #141414;
+$white: #d9d9d9;
+
 // button colors
-$buttonColor: #dbc118;
-$buttonHover: #9c8800;
-$buttonHoverDark: #d6b600;
-$buttonTextColor: #141414;
+$buttonColor: $primary;
+$buttonHover: $primaryDark;
+$buttonHoverDark: $primaryDark;
+$buttonTextColor: $black;
 
 // text colors
-$titleColor: #d9d9d9;
-$textColor: #d9d9d9;
-$highlightColor: #FFDA00;
+$titleColor: $white;
+$textColor: $white;
+$highlightColor: $primary;
 
 // Card Colors
-$cardBackground: #FFDA00;
-$cardTextColor: #141414;
-$cardButton: #141414;
-$cardButtonText: #FFDA00;
+$cardBackground: $primary;
+$cardTextColor: $black;
+$cardButton: $black;
+$cardButtonText: $primary;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);
@@ -25,6 +30,9 @@ $lightBoxShadow: rgba(0, 0, 0, 0.1);
 $lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
 $darkBoxShadow: rgba(0, 0, 0, 0.3);
 $darkBoxShadow2: rgba(0, 0, 0, 0.3);
+
+// Modal Overlay
+$modalOverlayBackground: rgba(0, 0, 0, 0.4);
 
 // linear gradients
 $experienceCardBlurredDivLG: linear-gradient(

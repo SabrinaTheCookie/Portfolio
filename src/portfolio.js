@@ -42,27 +42,28 @@ const socialMediaLinks = {
 // Some big projects you have worked on
 
 const projectsSection = {
-  title: "Projects",
+  title: "Releases",
   subtitle: "Experiences that have made it into the world.",
   projects: [
     {
       image: require("./assets/images/skyline-enterprises.png"),
-      projectName: "Skyline Virtual Luge",
-      projectDesc:
-        "Based on the real luge experience in Queenstown New Zealand, this arcade experience features a custom motion platform, photorealistic 3D environments built in the unreal enginer, and competitive multiplayer racing.",
-      footerLink: [
+      imageAlt: "Skyline Virtual Luge Logo",
+      title: "Skyline Virtual Luge",
+      subtitle:
+          "Based on the real luge experience in Queenstown New Zealand, this arcade experience features a custom motion platform, photorealistic 3D environments built in the Unreal Engine, and competitive multiplayer racing.",
+      links: [
         {
           name: "View Trailer",
-          url: "https://www.youtube.com/watch?v=r7UUMSHweUI&ab_channel=CerebralFix"
-        },
-        {
-          name: "Visit Website",
-          url: "https://queenstown.skyline.co.nz/things-to-do/other-activities/skyline-luge-racing/"
+          content: {
+            type: "iframe",
+            src: "https://www.youtube.com/embed/r7UUMSHweUI",
+            title: "Skyline Virtual Luge Trailer"
+          }
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -77,26 +78,34 @@ const achievementSection = {
     {
       title: "Game Developers Society Founder",
       subtitle:
-        "I was one of the founding members of Game Developers Society, that during my time grew to 140 members, drew sponsorship from Dinosaur Poloclub and Redbull, and won an award for Best Arts Event Programme.",
+        "I was one of the founding committee members of Game Developers Society (GDS) through to 2024, that during my time grew to 140 members, drew sponsorship from Dinosaur Polo Club and RedBull, and won an award for Best Arts Event Programme.",
       image: require("./assets/images/gdsLogo.png"),
       imageAlt: "Game Developers Society Logo",
-      footerLink: [
+      footer: [
         {
            name: "Award Night Photo",
-           url: "https://drive.google.com/file/d/1nty9yjki8Cejfdtxm0r73hw3IjQfdx0P/view?usp=sharing"
+          content: {
+            type: "image",
+            src: require("./assets/images/gdsAward.jpg"),
+            title: "Award Night Photo"
+          },
         }
       ]
     },
     {
       title: "Best Design Process Award",
       subtitle:
-        "Won 'Best Design Process' for my capstone project, Tangled Visions, given by University of Canterbury's School of Product Design'.",
+        "Won 'Best Design Process' for my capstone project, Tangled Visions in collaboration with RunawayPlay, given by University of Canterbury's School of Product Design'.",
       image: require("./assets/images/productDesignLogo.png"),
       imageAlt: "University of Canterbury School of Product Design Logo",
-      footerLink: [
+      footer: [
         {
-          name: "Tangled Visions Poster",
-          url: "https://drive.google.com/file/d/14K0QGRQ_NB5dGjdqLrOowpYaa2KvfIln/view?usp=sharing"
+          name: "Project Poster",
+          content: {
+            type: "image",
+            src: require("./assets/images/TangledVisionsPoster.png"),
+            title: "Tangled Visions Poster"
+          },
         }
       ]
     }
@@ -114,9 +123,18 @@ const talkSection = {
 
   talks: [
     {
+      title: "Game Developers Society 2025",
+      subtitle: "Topic: Industry Pathways\n\nI was invited back to be a speaker at their annual industry night to reflect on my pathway and things I'm proud of and what I wish I did differently.",
+      content: {
+        type: "iframe",
+        src: "https://docs.google.com/presentation/d/e/2PACX-1vQ_s3NEXobdnEPXe2QxytKTuj9B46ENtFLwZtJv88hMWdrZTamDkEbTd7TlGes5wtqgFV9mTMFHm2-Q/pubembed?start=true&loop=true&delayms=10000",
+        title: "GDS Industry Night 2025"
+      },
+    },
+    {
       title: "404 Talk Not Found",
       subtitle: "This will come soon I promise!\nGot an opportunity? Lets talk!",
-    }
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };

@@ -3,8 +3,10 @@
 
 .talk-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  z-index: 9999;
 }
 
 @media (max-width: 768px) {
