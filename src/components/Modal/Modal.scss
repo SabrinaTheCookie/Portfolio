@@ -1,5 +1,9 @@
 @import "../../_globalColor";
 
+$maxWidth: 85vw;
+$maxHeight: 90vh;
+$framePadding: 2rem;
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -17,11 +21,11 @@
   
   width: fit-content;
   height: fit-content;
-  max-width: 60vw;
-  max-height: 80vh;
+  max-width: $maxWidth;
+  max-height: $maxHeight;
   box-sizing: border-box;
   
-  padding: 2rem;
+  padding: $framePadding;
   background: $modalFrameBackground;
   box-shadow: 0 20px 30px 1px $modalFrameBackground;
   border-radius: 30px;
@@ -38,8 +42,8 @@
   align-items: center;
 
   img {
-    max-width: calc(60vw - 4rem);
-    max-height: calc(80vh - 4rem);
+    max-width: calc($maxWidth - ($framePadding * 2));
+    max-height: calc($maxHeight - ($framePadding * 2));
     width: auto;
     height: auto;
     object-fit: contain;
@@ -47,18 +51,18 @@
   }
 
   iframe {
-    width: calc(60vw - 4rem);
-    height: calc(80vh - 4rem);
+    width: calc($maxWidth - ($framePadding * 2));
+    height: calc($maxHeight - ($framePadding * 2));
     display: block;
     border: none;
   }
 
   iframe.is169 {
     /* Lock to 16:9 within the available width */
-    width: calc(60vw - 4rem);
-    height: calc((60vw - 4rem) * 9 / 16);
-    max-height: calc(80vh - 4rem);
-    max-width: calc((80vh - 4rem) * 16 / 9);
+    width: calc($maxWidth - ($framePadding * 2));
+    height: calc(($maxWidth - ($framePadding * 2)) * 9 / 16);
+    max-height: calc($maxHeight - ($framePadding * 2));
+    max-width: calc(($maxHeight - ($framePadding * 2)) * 16 / 9);
   }
 }
 
