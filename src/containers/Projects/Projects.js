@@ -1,7 +1,7 @@
 import "./Projects.scss";
 import { projectsSection } from "../../portfolio";
 import { Fade } from "react-awesome-reveal";
-import { useState } from "react";
+import React, { useState } from "react";
 import Modal from "../../components/Modal/Modal"; // Import the reusable modal
 
 export default function Projects() {
@@ -61,12 +61,7 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Modal */}
-          {modalContent && (
-              <Modal show={true} onClose={closeModal}>
-                <Modal.Content content={modalContent} />
-              </Modal>
-          )}
+          <Modal show={!!modalContent} onClose={closeModal} content={modalContent} />
         </div>
       </Fade>
   );

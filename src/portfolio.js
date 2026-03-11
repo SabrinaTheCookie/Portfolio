@@ -23,7 +23,13 @@ const greeting = {
   username: "Sabrina Cooke",
   title: "Kia Ora, I'm Sabrina",
   subTitle: "A Game Programmer and Educator from Aotearoa New Zealand building unique and immersive experiences.",
-  resumeLink: "https://drive.google.com/file/d/1qTOt0GTjerJMFt8HkQEf2k5IM-3-Y0UF/view?usp=sharing",
+  resume: {
+    content: {
+      type: "iframe",
+      src: require("./assets/Documents/resume_sabrinacooke.pdf"),
+      title: "Sabrina Cooke Resume"
+    }
+  },
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 

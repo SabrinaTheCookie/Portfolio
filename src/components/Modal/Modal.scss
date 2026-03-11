@@ -1,51 +1,76 @@
+@import "../../_globalColor";
+
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.85);
+  inset: 0;
+  background: $modalOverlayBackground;
+  z-index: 9999;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+}
+
+/* New wrapper that provides padding space */
+.modal-frame {
+  position: relative;
+  
+  width: fit-content;
+  height: fit-content;
+  max-width: 60vw;
+  max-height: 80vh;
+  box-sizing: border-box;
+  
+  padding: 2rem;
+  background: $modalFrameBackground;
+  box-shadow: 0 20px 30px 1px $modalFrameBackground;
+  border-radius: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .modal-content {
-  position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
-  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  overflow: hidden; // ensures content doesn't spill out
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: calc(60vw - 4rem);
+    max-height: calc(80vh - 4rem);
     width: auto;
     height: auto;
     object-fit: contain;
+    display: block;
   }
 
   iframe {
-    width: 100%;
-    height: 100%;       // fill the modal
-    min-height: 400px;  // ensures small iframes still show
-    border: 0;
+    width: calc(60vw - 4rem);
+    height: calc(80vh - 4rem);
+    display: block;
+    border: none;
+  }
+
+  iframe.is169 {
+    /* Lock to 16:9 within the available width */
+    width: calc(60vw - 4rem);
+    height: calc((60vw - 4rem) * 9 / 16);
+    max-height: calc(80vh - 4rem);
+    max-width: calc((80vh - 4rem) * 16 / 9);
   }
 }
 
 .modal-close-button {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 0.1rem;
+  right: 0.3rem;
+
   font-size: 1.5rem;
+  font-weight: bold;
   background: transparent;
   border: none;
-  color: white;
+  color: $black;
   cursor: pointer;
-  z-index: 1;
 }
