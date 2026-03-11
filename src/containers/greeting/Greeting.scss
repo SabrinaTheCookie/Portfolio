@@ -29,8 +29,8 @@
 }
 
 .greeting-main > * {
-  margin-bottom: 30px; 
-  flex: 1 1 0;         
+  margin-bottom: 30px;
+  flex: 1 1 0;
 }
 
 .button-greeting-div {
@@ -123,23 +123,23 @@
 
 @media (max-width: 1210px) {
   .greeting-main {
-    display: flex;            
-    flex-direction: column;   
-    align-items: center;      
-    gap: 2rem;                
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .greeting-text {
     font-size: 50px;
-    text-align: center;       
-    max-width: 90%;           
+    text-align: center;
+    max-width: 90%;
   }
 
   .greeting-text-p {
     font-size: 24px;
     line-height: normal;
-    text-align: center;       
-    max-width: 90%;           
+    text-align: center;
+    max-width: 90%;
   }
 
   .greeting-image-div {
@@ -148,15 +148,15 @@
   }
 
   .greeting-image-div img {
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1;
     margin-left: 0;
     margin-right: 0;
     transition: margin 0s ease;
   }
 
   .button-greeting-div {
-    justify-content: center;  
-    flex-wrap: wrap;   
-    gap: 1rem
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }

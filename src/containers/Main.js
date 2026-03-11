@@ -20,9 +20,7 @@ const Main = () => {
       const splashTimer = setTimeout(() => {
         setIsShowingSplashAnimation(false);
         window.scrollTo(0, 0);
-        },
-        splashScreen.duration
-      );
+      }, splashScreen.duration);
       return () => {
         clearTimeout(splashTimer);
       };
@@ -31,20 +29,20 @@ const Main = () => {
 
   return (
     <div className="main">
-        {isShowingSplashAnimation && splashScreen.enabled ? (
-          <SplashScreen />
-        ) : (
-          <>
-            <Header />
-            <Greeting />
-            <Projects />
-            <Achievement />
-            <Talks />
-            <Contact />
-            <Footer />
-            <ScrollToTopButton />
-          </>
-        )}
+      {isShowingSplashAnimation && splashScreen.enabled ? (
+        <SplashScreen />
+      ) : (
+        <>
+          <Header />
+          <Greeting />
+          <Projects />
+          <Achievement />
+          <Talks />
+          <Contact />
+          <Footer />
+          <ScrollToTopButton />
+        </>
+      )}
     </div>
   );
 };

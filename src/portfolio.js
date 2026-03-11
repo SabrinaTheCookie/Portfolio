@@ -22,7 +22,8 @@ const illustration = {
 const greeting = {
   username: "Sabrina Cooke",
   title: "Kia Ora, I'm Sabrina",
-  subTitle: "A Game Programmer and Educator from Aotearoa New Zealand building unique and immersive experiences.",
+  subTitle:
+    "A Game Programmer and Educator from Aotearoa New Zealand building unique and immersive experiences.",
   resume: {
     content: {
       type: "iframe",
@@ -56,7 +57,7 @@ const projectsSection = {
       imageAlt: "Skyline Virtual Luge Logo",
       title: "Skyline Virtual Luge",
       subtitle:
-          "Based on the real luge experience in Queenstown New Zealand, this arcade experience features a custom motion platform, photorealistic 3D environments built in the Unreal Engine, and competitive multiplayer racing.",
+        "Based on the real luge experience in Queenstown New Zealand, this arcade experience features a custom motion platform, photorealistic 3D environments built in the Unreal Engine, and competitive multiplayer racing.",
       links: [
         {
           name: "View Trailer",
@@ -77,8 +78,7 @@ const projectsSection = {
 
 const achievementSection = {
   title: emoji("Achievements"),
-  subtitle:
-    "Some cool stuff that I have done.",
+  subtitle: "Some cool stuff that I have done.",
 
   achievementsCards: [
     {
@@ -89,12 +89,12 @@ const achievementSection = {
       imageAlt: "Game Developers Society Logo",
       footer: [
         {
-           name: "Award Night Photo",
+          name: "Award Night Photo",
           content: {
             type: "image",
             src: require("./assets/images/gdsAward.jpg"),
             title: "Award Night Photo"
-          },
+          }
         }
       ]
     },
@@ -111,7 +111,7 @@ const achievementSection = {
             type: "image",
             src: require("./assets/images/TangledVisionsPoster.png"),
             title: "Tangled Visions Poster"
-          },
+          }
         }
       ]
     }
@@ -130,17 +130,18 @@ const talkSection = {
   talks: [
     {
       title: "Game Developers Society 2025",
-      subtitle: "Topic: Industry Pathways\n\nI was invited back to be a speaker at their annual industry night to reflect on my pathway and things I'm proud of and what I wish I did differently.",
+      subtitle:
+        "Topic: Industry Pathways\n\nI was invited back to be a speaker at their annual industry night to reflect on my pathway and things I'm proud of and what I wish I did differently.",
       content: {
         type: "iframe",
         src: "https://docs.google.com/presentation/d/e/2PACX-1vQ_s3NEXobdnEPXe2QxytKTuj9B46ENtFLwZtJv88hMWdrZTamDkEbTd7TlGes5wtqgFV9mTMFHm2-Q/pubembed?start=true&loop=true&delayms=10000&rm=minimal",
         title: "GDS Industry Night 2025"
-      },
+      }
     },
     {
       title: "404 Talk Not Found",
-      subtitle: "This will come soon I promise!\nGot an opportunity? Lets talk!",
-    },
+      subtitle: "This will come soon I promise!\nGot an opportunity? Lets talk!"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -154,7 +155,6 @@ const contactInfo = {
 
 //#region Unused
 
-
 const isHireable = true;
 
 export {
@@ -166,5 +166,5 @@ export {
   achievementSection,
   talkSection,
   contactInfo,
-  isHireable,
+  isHireable
 };
