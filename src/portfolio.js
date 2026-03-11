@@ -133,7 +133,7 @@ const talkSection = {
       subtitle: "Topic: Industry Pathways\n\nI was invited back to be a speaker at their annual industry night to reflect on my pathway and things I'm proud of and what I wish I did differently.",
       content: {
         type: "iframe",
-        src: "https://docs.google.com/presentation/d/e/2PACX-1vQ_s3NEXobdnEPXe2QxytKTuj9B46ENtFLwZtJv88hMWdrZTamDkEbTd7TlGes5wtqgFV9mTMFHm2-Q/pubembed?start=true&loop=true&delayms=10000",
+        src: "https://docs.google.com/presentation/d/e/2PACX-1vQ_s3NEXobdnEPXe2QxytKTuj9B46ENtFLwZtJv88hMWdrZTamDkEbTd7TlGes5wtqgFV9mTMFHm2-Q/pubembed?start=true&loop=true&delayms=10000&rm=minimal",
         title: "GDS Industry Night 2025"
       },
     },
