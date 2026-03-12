@@ -1,0 +1,14 @@
+@import "../../_globalColor";
+@import "../../_globalParams";
+
+.section-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: $thinWidth) {
+  .section-cards-div {
+    grid-template-columns: 1fr;
+  }
+}

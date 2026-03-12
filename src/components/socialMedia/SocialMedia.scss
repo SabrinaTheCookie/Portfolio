@@ -2,6 +2,9 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .icon-button {
@@ -87,11 +90,4 @@
   background-color: $buttonColor;
   color: $buttonTextColor;
   box-shadow: 0px 0px 50px $buttonColor;
-}
-
-/* Media Query */
-@media (max-width: 1210px) {
-  .social-media-div {
-    text-align: center;
-  }
 }

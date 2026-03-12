@@ -1,4 +1,5 @@
 @import "../../_globalColor";
+@import "../../_globalParams";
 
 .main {
   width: 90%;
@@ -6,6 +7,7 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -13,30 +15,42 @@
   margin-top: 2rem;
 }
 
-.greeting-main {
-  display: flex;
-}
-
 .subTitle {
   color: $textColor !important;
 }
 
+// ── Wide layout (two-column) ──────────────────────────────────────────────────
 .greeting-main {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .greeting-main > * {
-  margin-bottom: 30px; 
-  flex: 1 1 0;         
+  margin-bottom: 30px;
+  flex: 1 1 0;
+}
+
+// Text column — left-aligned by default
+.greeting-text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: pre-line;
+}
+
+.greeting-text-div .social-media-div {
+  justify-content: flex-start;
 }
 
 .button-greeting-div {
   display: flex;
   margin-top: 40px;
+  justify-content: flex-start;
 }
+
 .download-link-button {
   text-decoration: none;
 }
@@ -55,23 +69,23 @@
   max-width: 700px;
 }
 
+// Image column
 .greeting-image-div {
   display: flex;
   flex-shrink: 1;
   min-width: 0;
-  justify-content: center; /* default center */
+  justify-content: center;
 }
 
 .greeting-image-div img {
   width: 500px;
   margin-top: 75px;
   border-radius: 80px;
-  margin-left: 0;
-  margin-right: 0;
-  aspect-ratio: 1 / 1; /* keep it square like your 1920x1920 image */
+  aspect-ratio: 1 / 1;
   transition: margin 1s ease;
 }
 
+// ── Wave emoji ────────────────────────────────────────────────────────────────
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
@@ -81,30 +95,17 @@
 }
 
 @keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(-10deg); }
+  20%  { transform: rotate(12deg); }
+  30%  { transform: rotate(-10deg); }
+  40%  { transform: rotate(9deg); }
+  50%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
-@media (min-width: 2300px) {
+// ── Extra wide ────────────────────────────────────────────────────────────────
+@media (min-width: $extraWideWidth) {
   .greeting-text {
     max-width: 120%;
   }
@@ -114,49 +115,54 @@
   }
 }
 
-@media (max-width: 1650px) {
-  .greeting-image-div img {
-    margin-left: calc(100% - 500px); /* container width minus image width */
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 1210px) {
+// ── Thin (stacked) ────────────────────────────────────────────────────────────
+@media (max-width: $thinWidth) {
   .greeting-main {
-    display: flex;            
-    flex-direction: column;   
-    align-items: center;      
-    gap: 2rem;                
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  // Centre the text column and everything inside it
+  .greeting-text-div {
+    align-items: center;
+    width: 100%;
+  }
+
+  .greeting-text-div .social-media-div {
+    justify-content: center;
   }
 
   .greeting-text {
     font-size: 50px;
-    text-align: center;       
-    max-width: 90%;           
+    text-align: center;
+    max-width: 100%;
   }
 
   .greeting-text-p {
     font-size: 24px;
     line-height: normal;
-    text-align: center;       
-    max-width: 90%;           
+    text-align: center;
+    max-width: 100%;
+    min-width: unset;
   }
 
   .greeting-image-div {
-    display: flex;
     justify-content: center;
   }
 
   .greeting-image-div img {
-    aspect-ratio: 1 / 1; 
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
     transition: margin 0s ease;
   }
 
   .button-greeting-div {
-    justify-content: center;  
-    flex-wrap: wrap;   
-    gap: 1rem
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .button-greeting-div .main-button {
+    margin-right: 0;
   }
 }

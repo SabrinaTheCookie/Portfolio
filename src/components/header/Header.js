@@ -1,15 +1,18 @@
 import "./Header.scss";
+import "../../_globalParams.scss";
 import {
     greeting,
     talkSection,
     achievementSection,
-    projectsSection,
+    currentProjectsSection,
+    releasesSection,
 } from "../../portfolio";
 import { useEffect, useState } from "react";
 
 const Header = () => {
     const menuItems = [
-        projectsSection.display && { id: "projects", label: "Projects" },
+        releasesSection.display && { id: "releases", label: "Releases" },
+        currentProjectsSection.display && { id: "projects", label: "Projects" },
         achievementSection.display && { id: "achievements", label: "Achievements" },
         talkSection.display && { id: "talks", label: "Talks" },
         { id: "contact", label: "Contact Me" },
