@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ce3d86f2.css",
-    "main.js": "/Portfolio/static/js/main.07551e04.js",
+    "main.css": "/Portfolio/static/css/main.7e1c685e.css",
+    "main.js": "/Portfolio/static/js/main.b68ddadc.js",
     "static/media/TangledVisionsPoster.png": "/Portfolio/static/media/TangledVisionsPoster.cb4d36ec984089da44e2.png",
     "static/media/kereru.jpg": "/Portfolio/static/media/kereru.c46f73259eb573fb4fda.jpg",
-    "static/media/skyline-enterprises.png": "/Portfolio/static/media/skyline-enterprises.2b77e0e6b9406b24de2f.png",
     "static/media/Montserrat-Regular.ttf": "/Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/CaravaneersArtTest.png": "/Portfolio/static/media/CaravaneersArtTest.6068ae7d1f5ca0ff72ba.png",
     "static/media/productDesignLogo.png": "/Portfolio/static/media/productDesignLogo.5d65c3a31e10b73988a4.png",
     "static/media/bree_Headshot.jpg": "/Portfolio/static/media/bree_Headshot.f7f5c233dff8f1e405f5.jpg",
     "static/media/gdsAward.jpg": "/Portfolio/static/media/gdsAward.9ee7b85830f3062d46c5.jpg",
     "static/media/gdsLogo.png": "/Portfolio/static/media/gdsLogo.d37a8c8a6311d204812f.png",
     "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/resume_sabrinacooke.pdf": "/Portfolio/static/media/resume_sabrinacooke.880fe3a07bc34662b81d.pdf",
+    "static/media/CaravaneersPrototype.png": "/Portfolio/static/media/CaravaneersPrototype.31096714bd533592fe28.png",
     "index.html": "/Portfolio/index.html",
-    "main.ce3d86f2.css.map": "/Portfolio/static/css/main.ce3d86f2.css.map",
-    "main.07551e04.js.map": "/Portfolio/static/js/main.07551e04.js.map"
+    "main.7e1c685e.css.map": "/Portfolio/static/css/main.7e1c685e.css.map",
+    "main.b68ddadc.js.map": "/Portfolio/static/js/main.b68ddadc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce3d86f2.css",
-    "static/js/main.07551e04.js"
+    "static/css/main.7e1c685e.css",
+    "static/js/main.b68ddadc.js"
   ]
 }
