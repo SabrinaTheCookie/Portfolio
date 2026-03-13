@@ -18,52 +18,56 @@ export default function Greeting() {
   function closeModal() {
     setModalContent(null);
   }
-  
+
   if (!greeting.displayGreeting) {
     return null;
   }
   return (
-      <>
-    <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main" id="greeting">
-        <div className="greeting-main">
-          <div className="greeting-text-div">
-            <div>
-              <h1 className={"greeting-text"}>
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
-              </h1>
-              <p
-                className={"greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
-              <div id="resume" className="empty-div"></div>
-              <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resume && greeting.resume.content && (
-                  <a
-                    href="#"
-                    className="download-link-button"
-                    onClick={() => openModal(greeting.resume.content)}
-                  >
-                    <Button text="My resume" />
-                  </a>
-                )}
+    <>
+      <Fade bottom duration={1000} distance="40px">
+        <div className="greet-main" id="greeting">
+          <div className="greeting-main">
+            <div className="greeting-text-div">
+              <div>
+                <h1 className={"greeting-text"}>
+                  {" "}
+                  {greeting.title}{" "}
+                  <span className="wave-emoji">{emoji("👋")}</span>
+                </h1>
+                <p className={"greeting-text-p subTitle"}>
+                  {greeting.subTitle}
+                </p>
+                <div id="resume" className="empty-div"></div>
+                <SocialMedia />
+                <div className="button-greeting-div">
+                  <Button text="Contact me" href="#contact" />
+                  {greeting.resume && greeting.resume.content && (
+                    <a
+                      href="#"
+                      className="download-link-button"
+                      onClick={() => openModal(greeting.resume.content)}
+                    >
+                      <Button text="My resume" />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="greeting-image-div">
-              <img src={require("../../assets/images/bree_Headshot.jpg")} alt="portrait"/>
+            <div className="greeting-image-div">
+              <img
+                src={require("../../assets/images/bree_Headshot.jpg")}
+                alt="portrait"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </Fade>
+      </Fade>
 
-    <Modal show={!!modalContent} onClose={closeModal} content={modalContent} />
-      </>
+      <Modal
+        show={!!modalContent}
+        onClose={closeModal}
+        content={modalContent}
+      />
+    </>
   );
 }

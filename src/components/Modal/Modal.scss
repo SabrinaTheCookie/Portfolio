@@ -18,18 +18,18 @@ $framePadding: 2rem;
 /* New wrapper that provides padding space */
 .modal-frame {
   position: relative;
-  
+
   width: fit-content;
   height: fit-content;
   max-width: $maxWidth;
   max-height: $maxHeight;
   box-sizing: border-box;
-  
+
   padding: $framePadding;
   background: $modalFrameBackground;
   box-shadow: 0 20px 30px 1px $modalFrameBackground;
   border-radius: 30px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,4 @@
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 import Card from "../Card/Card";
 import "./Section.scss";
 
@@ -17,7 +17,7 @@ import "./Section.scss";
  * The optional `id` prop sets the anchor id on the section element,
  * e.g. id="releases" or id="achievements".
  */
-export default function Section({ sectionData, id }) {
+export default function Section({sectionData, id}) {
   if (!sectionData || !sectionData.display) {
     return null;
   }
