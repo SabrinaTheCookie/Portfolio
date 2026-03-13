@@ -80,7 +80,7 @@ const releasesSection = {
     },
     {
       frame: {
-        src: "",
+        src: require("./assets/Video/JamShowreel.mp4"),
         title: "Game Jam Supercut",
         aspectRatio: "56.25%" // 16:9 — omit to use default
       },
